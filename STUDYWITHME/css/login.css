@@ -24,7 +24,7 @@ body {
 .left-image {
     position: absolute;
     left: 60px;
-    top: 240px;
+    top: 100px;
 }
 
 .left-image img {
