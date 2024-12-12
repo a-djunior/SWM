@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Lista de usuários e senhas
-  const users = {
+  const username = {
     'Adão Dimas': {
-      password: 'Adao1234',
+      password: Adao1234,
       photo: 'https://github.com/seu_usuario/seu_repositorio/caminho_para_foto_Adao.jpg'
     },
     'Maria Silva': {
-      password: 'Maria1234',
+      password: Maria1234,
       photo: 'https://github.com/seu_usuario/seu_repositorio/caminho_para_foto_Maria.jpg'
     }
     // Adicione os outros usuários aqui com os respectivos links das fotos
