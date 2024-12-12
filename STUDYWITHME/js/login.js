@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Verificar se o login é bem-sucedido
         if (users[username] && users[username] === password) {
             // Redirecionar para outro arquivo HTML
-            window.location.href = 'seu_arquivo.html'; // Substitua 'seu_arquivo.html' pelo nome do seu arquivo HTML
+            window.location.href = 'page2.html'; // Substitua 'seu_arquivo.html' pelo nome do seu arquivo HTML
         } else {
             alert('Usuário ou senha incorretos. Tente novamente.');
         }
