@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
     if (currentUser) {
-        document.getElementById('username').textContent = currentUser.name;
-        document.getElementById('userPhoto').src = currentUser.photo;
+        document.getElementById('profileName').textContent = currentUser.name;
+        document.getElementById('profilePhoto').src = currentUser.photo;
     } else {
-        // Se não houver usuário logado, redireciona para a página de login
+        // Redirecionar para a página de login se não houver um usuário logado
         window.location.href = 'login.html';
     }
 });
