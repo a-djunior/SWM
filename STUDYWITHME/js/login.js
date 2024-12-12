@@ -17,15 +17,24 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
     const usernameField = document.getElementById('username');
     const passwordField = document.getElementById('password');
-    const username = usernameField.value;
-    const password = passwordField.value;
+    const usernameValue = usernameField.value;
+    const passwordValue = passwordField.value;
 
     // Verificar se o login é bem-sucedido
-    if (users[username] && users[username].password === password) {
-      localStorage.setItem('currentUser', JSON.stringify({ name: username, photo: users[username].photo }));
-      window.location.href = 'page2.html'; // Redireciona para a página 2
+    if (users[usernameValue] && users[usernameValue].password === passwordValue) {
+      localStorage.setItem('currentUser', JSON.stringify({ name: usernameValue, photo: users[usernameValue].photo }));
+      window.location.href = 'inicio.html'; // Redireciona para a página de início
     } else {
       alert('Usuário ou senha incorretos. Tente novamente.');
+    }
+  });
+
+  // Verificar se o usuário já está logado ao carregar a página de início
+  window.addEventListener('load', function() {
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (currentUser) {
+      // Redirecionar para a página de login para verificar novamente
+      window.location.href = 'login.html';
     }
   });
 });
