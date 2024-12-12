@@ -12,29 +12,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adicione os outros usuários aqui com os respectivos links das fotos
   };
 
-  // Adicionar evento de envio ao formulário
-  document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const usernameField = document.getElementById('username');
-    const passwordField = document.getElementById('password');
-    const usernameValue = usernameField.value;
-    const passwordValue = passwordField.value;
+  // Verificar se o usuário já está logado ao carregar a página de login
+  const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+  if (currentUser && users[currentUser.name] && users[currentUser.name].password === currentUser.password) {
+    window.location.href = 'page2.html'; // Redireciona para a página 2
+  } else {
+    // Adicionar evento de envio ao formulário
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const usernameField = document.getElementById('username');
+      const passwordField = document.getElementById('password');
+      const usernameValue = usernameField.value;
+      const passwordValue = passwordField.value;
 
-    // Verificar se o login é bem-sucedido
-    if (users[usernameValue] && users[usernameValue].password === passwordValue) {
-      localStorage.setItem('currentUser', JSON.stringify({ name: usernameValue, photo: users[usernameValue].photo }));
-      window.location.href = 'inicio.html'; // Redireciona para a página de início
-    } else {
-      alert('Usuário ou senha incorretos. Tente novamente.');
-    }
-  });
-
-  // Verificar se o usuário já está logado ao carregar a página de início
-  window.addEventListener('load', function() {
-    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    if (currentUser) {
-      // Redirecionar para a página de login para verificar novamente
-      window.location.href = 'login.html';
-    }
-  });
+      // Verificar se o login é bem-sucedido
+      if (users[usernameValue] && users[usernameValue].password === passwordValue) {
+        localStorage.setItem('currentUser', JSON.stringify({ name: usernameValue, password: passwordValue, photo: users[usernameValue].photo }));
+        window.location.href = 'page2.html'; // Redireciona para a página 2
+      } else {
+        alert('Usuário ou senha incorretos. Tente novamente.');
+      }
+    });
+  }
 });
