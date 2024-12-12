@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const users = {
     'Adão Dimas': {
       password: 'Adao1234',
-      photo: 'https://github.com/seu_usuario/seu_repositorio/caminho_para_foto_Adao.jpg'
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
     },
     'Maria Silva': {
       password: 'Maria1234',
