@@ -1,16 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Lista de usuários e senhas
     const users = {
-        'Adão Dimas': 'Adao1234',
-        'Maria Silva': 'Maria1234',
-        'João Souza': 'Joao1234',
-        'Ana Paula': 'Ana1234',
-        'Carlos Alberto': 'Carlos1234',
-        'Fernanda Lima': 'Fernanda1234',
-        'Pedro Santos': 'Pedro1234',
-        'Juliana Pereira': 'Juliana1234',
-        'Ricardo Oliveira': 'Ricardo1234',
-        'Tatiana Costa': 'Tatiana1234'
+        document.addEventListener('DOMContentLoaded', function() {
+    const users = {
+        'Adão Dimas': { password: 'Adao1234', photo: 'https://github.com/seu_usuario/seu_repositorio/caminho_para_foto_Adao.jpg' },
+        'Maria Silva': { password: 'Maria1234', photo: 'https://github.com/seu_usuario/seu_repositorio/caminho_para_foto_Maria.jpg' },
+        // Adicione os outros usuários aqui com os respectivos links das fotos
+    };
+
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (users[username] && users[username].password === password) {
+            localStorage.setItem('currentUser', JSON.stringify({ name: username, photo: users[username].photo }));
+            window.location.href = 'inicio.html'; // Redireciona para a página de início
+        } else {
+            alert('Usuário ou senha incorretos. Tente novamente.');
+        }
+    });
+});
+
     };
 
     // Adicionar evento de envio ao formulário
