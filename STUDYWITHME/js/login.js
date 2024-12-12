@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     'Maria Silva': {
       password: 'Maria1234',
-      photo: 'https://github.com/seu_usuario/seu_repositorio/caminho_para_foto_Maria.jpg'
+      photo: 'STUDYWITHME/Photos/Maria Silva.jpg'
     }
     // Adicione os outros usuários aqui com os respectivos links das fotos
   };
