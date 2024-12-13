@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
       password: 'Adao1234',
       photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
     },
-    'Maria Silva': {
-      password: 'Maria1234',
+    'Teste01': {
+      password: 'Test1234',
       photo: 'STUDYWITHME/Photos/Maria Silva.jpg'
     }
     // Adicione os outros usuários aqui com os respectivos links das fotos
