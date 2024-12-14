@@ -1,14 +1,46 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Lista de usuários e senhas
   const users = {
+    'Adão Dimas Jr': {
+      password: 'Dimas1234',
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+    },
+    'Giuliano Panik': {
+      password: 'Giualiano1234',
+      photo: 'STUDYWITHME/Photos/Maria Silva.jpg'
+    },
+    'Flávia Alessandra': {
+      password: 'Flavia1234',
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+    },
+    'Iandra Beatriz': {
+      password: 'Iandra1234',
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+    },
+    'Nicolas Nadal': {
+      password: 'Nicolas1234',
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+    },
+    'Jeferson Eurides': {
+      password: 'Jeferson1234',
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+    },
+    'Luana Eurides': {
+      password: 'Luana1234',
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+    },
+    'Cintia Eurides': {
+      password: 'Cintia1234',
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+    },
+    'Rosangela Aparecida': {
+      password: 'Adao1234',
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+    },
     'Adão Dimas': {
       password: 'Adao1234',
       photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
     },
-    'Teste01': {
-      password: 'Test1234',
-      photo: 'STUDYWITHME/Photos/Maria Silva.jpg'
-    }
     // Adicione os outros usuários aqui com os respectivos links das fotos
   };
 
