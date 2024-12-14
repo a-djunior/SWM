@@ -1,5 +1,5 @@
 body {
-    background: url('https://i1.wp.com/wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-19.gif') no-repeat center center fixed;
+    background: url('https://storage.acon3d.com/product/slwPYka8OzshKnHitoO_9.gif') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -13,32 +13,89 @@ body {
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 80vh;
     box-sizing: border-box;
     position: relative;
+    flex-wrap: wrap; /* Permite flexibilidade no layout */
 }
 
+/* Flexbox base style */
 .left-image {
-    position: absolute;
-    left: 60px;
-    top: calc(50% - (altura_do_elemento / 2));
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+    min-width: 300px; /* Previne que a imagem fique muito pequena */
 }
 
 .left-image img {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 100%;
     height: auto;
+    max-width: 100%; /* Garante que a imagem ocupe 100% da largura disponível */
     border-radius: 10px;
 }
 
+/* Computador (1920x1080) - aspect ratio 16:9 */
+@media (min-width: 1200px) {
+    .left-image img {
+        content: url('https://mediahub.seoul.go.kr/uploads/mediahub/2023/09/SmirsuqGMVTIoefrEtQWdgfUWrVMKYSt.gif');
+        max-width: 400px; /* Tamanho máximo da imagem */
+    }
+}
+
+/* Tablet (2048x1536) - aspect ratio 4:3 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .left-image img {
+        content: url('https://th.bing.com/th/id/OIP.gxpLc0Ofis1uhqx2j804igHaFJ?rs=1&pid=ImgDetMain');
+        max-width: 700px; /* Ajuste o tamanho conforme necessário */
+    }
+}
+
+/* Celular (1080x1920) - aspect ratio 9:16 */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .left-image {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .left-image img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        content: url('https://i.gifer.com/7Plh.gif');
+    }
+
+    .login-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-form input,
+    .login-form button {
+        width: 100%;
+    }
+}
+
 .login-form {
+    flex: 1;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 45%;
+    width: 82%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,35 +158,4 @@ body {
 
 .login-form a:hover {
     text-decoration: underline;
-}
-
-/* Estilos para telas menores que 768px */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Alteração para melhor exibição em telas pequenas */
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        justify-content: center;
-    }
-
-    .left-image {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-bottom: 20px; /* Espaçamento entre a imagem e o formulário de login */
-    }
-
-    .left-image img {
-        width: 100%; /* A largura se ajustará à largura da tela */
-    }
-
-    .login-form {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .login-form input, .login-form button {
-        width: 100%;
-    }
 }
