@@ -3,43 +3,47 @@ document.addEventListener('DOMContentLoaded', function() {
   const users = {
     'Adão Dimas Jr': {
       password: 'Dimas1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      photo: 'STUDYWITHME/Photos/Adão Dimas Jr.jpg'
     },
     'Giuliano Panik': {
       password: 'Giualiano1234',
-      photo: 'STUDYWITHME/Photos/Maria Silva.jpg'
+      photo: 'STUDYWITHME/Photos/Giuliano Panik.jpg'
     },
     'Flávia Alessandra': {
       password: 'Flavia1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      photo: 'STUDYWITHME/Photos/Flávia Alessandra.jpg'
     },
     'Iandra Beatriz': {
       password: 'Iandra1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      photo: 'STUDYWITHME/Photos/Iandra Beatriz.jpg'
     },
     'Nicolas Nadal': {
       password: 'Nicolas1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      photo: 'STUDYWITHME/Photos/Nicolas Nadal.jpg'
     },
     'Jeferson Eurides': {
       password: 'Jeferson1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      photo: 'STUDYWITHME/Photos/Jeferson Eurides.jpg'
     },
     'Luana Eurides': {
       password: 'Luana1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      photo: 'STUDYWITHME/Photos/Luana Eurides.jpg'
     },
     'Cintia Eurides': {
       password: 'Cintia1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      photo: 'STUDYWITHME/Photos/Cintia Eurides.jpg'
     },
     'Rosangela Aparecida': {
-      password: 'Adao1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      password: 'Rosangela1234',
+      photo: 'STUDYWITHME/Photos/Rosangela Aparecida.jpg'
     },
     'Adão Dimas': {
       password: 'Adao1234',
-      photo: 'STUDYWITHME/Photos/Adão Dimas.jpeg'
+      photo: 'STUDYWITHME/Photos/Adão Dimas.jpg'
+    },
+     'Fabrício Ferreira': {
+      password: 'Fabricio1234',
+      photo: 'STUDYWITHME/Photos/Fabrício Ferreira.jpg'
     },
     // Adicione os outros usuários aqui com os respectivos links das fotos
   };
