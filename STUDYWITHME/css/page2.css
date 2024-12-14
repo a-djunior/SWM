@@ -32,7 +32,7 @@ body {
     left: 0;
     height: 100%;
     width: 5px;
-    background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Efeito decorativo */
+    background: linear-gradient(to bottom, #000fff, #00ffff); /* Efeito decorativo */
 }
 
 .sidebar #profile {
@@ -42,8 +42,8 @@ body {
 
 .sidebar #profile img {
     border-radius: 50%;
-    width: 100px; /* Aumentado para uma visualização melhor */
-    height: 100px;
+    width: 150px; /* Aumentado para uma visualização melhor */
+    height: 150px;
     border: 3px solid #fff;
 }
 
