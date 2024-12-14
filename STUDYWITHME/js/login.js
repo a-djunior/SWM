@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
       password: 'Cintia1234',
       photo: 'STUDYWITHME/Photos/Cintia Eurides.jpg'
     },
-    'Rosangela Aparecida': {
+    'Rosangela Ribeiro': {
       password: 'Rosangela1234',
-      photo: 'STUDYWITHME/Photos/Rosangela Aparecida.jpg'
+      photo: 'STUDYWITHME/Photos/Rosangela Ribeiro.jpg'
     },
     'Adão Dimas': {
       password: 'Adao1234',
