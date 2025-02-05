@@ -130,12 +130,12 @@ body {
 .login-form button {
     padding: 15px;
     font-size: 16px;
-    background-color: blue;
+    background-color: green;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    width: 85%;
+    width: 80%;
     transition: background-color 0.3s;
 }
 
