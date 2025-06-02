@@ -4,11 +4,11 @@ const data = [
     cursos: [
       {
         nome: "Excel + Power BI",
-        link: "https://www.cursoemvideo.com/curso/excell/",
+        link: "https://app.cursa.com.br/home/course/curso-power-bi-completo/314"
       },
       {
         nome: "Lógica de Programação + Git/GitHub",
-        link: "https://www.cursoemvideo.com/course/curso-de-logica-de-programacao/"
+        link: "https://www.udacity.com/course/version-control-with-git--ud123"
       }
     ]
   },
@@ -17,11 +17,11 @@ const data = [
     cursos: [
       {
         nome: "Front-End (HTML, CSS, JavaScript, React)",
-        link: "https://www.udemy.com/course/web-completo/"
+        link: "https://www.origamid.com/curso/html-e-css-para-iniciantes/"
       },
       {
-        nome: "Mobile com React Native ou Flutter",
-        link: "https://www.udemy.com/course/flutter-completo/"
+        nome: "React Completo",
+        link: "https://www.origamid.com/curso/react-completo/"
       }
     ]
   },
@@ -30,11 +30,11 @@ const data = [
     cursos: [
       {
         nome: "SQL (PostgreSQL / MySQL)",
-        link: "https://www.udemy.com/course/sql-completo/"
+        link: "https://www.udemy.com/course/curso-de-postgresql/"
       },
       {
         nome: "NoSQL (MongoDB)",
-        link: "https://www.mongodb.com/learn"
+        link: "https://www.alura.com.br/curso-online-mongodb-modelagem-de-dados"
       },
       {
         nome: "Data Science para Educação",
@@ -47,7 +47,7 @@ const data = [
     cursos: [
       {
         nome: "IA Aplicada à Educação",
-        link: "https://www.udemy.com/course/inteligencia-artificial-com-python-e-chatgpt/"
+        link: "https://www.edx.org/course/introduction-to-artificial-intelligence-ai"
       }
     ]
   },
