@@ -65,7 +65,7 @@ h1 {
   background: #eaf2f8;
 }
 
-.item input[type=\"checkbox\"] {
+.item input[type="checkbox"] {
   margin-right: 0.5rem;
   transform: scale(1.2);
 }
