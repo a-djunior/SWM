@@ -4,7 +4,7 @@ const data = [
     cursos: [
       {
         nome: "Excel + Power BI",
-        link: "https://www.udemy.com/course/complete-excel-power-bi/",
+        link: "https://www.cursoemvideo.com/curso/excell/",
       },
       {
         nome: "Lógica de Programação + Git/GitHub",
